@@ -47,7 +47,7 @@ function saludo(idioma) {
   // Tu código:
   switch (idioma){
    case "aleman":
-    return("Guten Tag!")
+   return("Guten Tag!")
     break;
    case "mandarin":
     return("Ni Hao!")
@@ -55,7 +55,7 @@ function saludo(idioma) {
    case "ingles" :
      return("Hello!")
      break;
-   default:
+     default:
      return("Hola!")}
 }
 
@@ -83,15 +83,13 @@ function colors(color) {
     default : 
       return ("Color not found")
 
-
-
-  }
+   }
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
-  // Tu código:
+  //Tu código:
   if (numero ===10|| numero===5)
   {return(true)}
   else 
@@ -119,7 +117,7 @@ function esEntero(numero) {
   if (numero===Math.floor(numero))
   {return(true)}
   else {return(false)}
-}
+ }
 
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
@@ -168,11 +166,11 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
    numero=0
    cont = 0
-  for(i=0; i<= numero; i++){
-    cont++
+  for(i=0; i<= numero; i++){if (numero%i===0)
+    {cont++}
     }
-   if (cont===2){return (true)}
-   else {return(false)}
+   if (numero===0|| numero===1|| cont>2){return (false)}
+   else {return(true)}
  }
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
